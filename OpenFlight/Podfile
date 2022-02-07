@@ -1,0 +1,15 @@
+platform :ios, '13.0'
+
+target 'OpenFlightApp' do
+    use_frameworks!
+    pod 'GroundSdk', '~> 7.0.0'
+    pod 'ArsdkEngine', '~> 7.0.0'
+    pod 'SdkCore', '~> 7.0.0'
+    pod 'OpenFlightCore', '~> 7.0.1'
+    pod 'Reusable'
+    pod 'SwiftyUserDefaults'
+    pod 'KeychainAccess'
+    pod 'ReachabilitySwift'
+    pod 'lottie-ios'
+    pod 'ArcGIS-Runtime-SDK-iOS'
+end

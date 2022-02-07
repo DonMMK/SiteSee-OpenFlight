@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rajdhani-Medium.ttf">
+            <string>Rajdhani-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DroneCalibrationFailureItemView" customModule="OpenFlight" customModuleProvider="target">
+            <connections>
+                <outlet property="mainLabel" destination="frA-Px-63J" id="Bre-Es-xY5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="•" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2be-Os-R9Y">
+                    <rect key="frame" x="0.0" y="0.0" width="5.5" height="17.5"/>
+                    <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="15"/>
+                    <color key="textColor" name="default_text_color"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="17"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frA-Px-63J">
+                    <rect key="frame" x="13.5" y="0.0" width="520.5" height="143"/>
+                    <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="15"/>
+                    <color key="textColor" name="default_text_color"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="17"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="frA-Px-63J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="930-zG-g85"/>
+                <constraint firstItem="frA-Px-63J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HFE-ms-5LX"/>
+                <constraint firstItem="2be-Os-R9Y" firstAttribute="firstBaseline" secondItem="frA-Px-63J" secondAttribute="firstBaseline" id="IyF-Ok-d99"/>
+                <constraint firstItem="frA-Px-63J" firstAttribute="leading" secondItem="2be-Os-R9Y" secondAttribute="trailing" constant="8" id="UXa-vr-5LT"/>
+                <constraint firstAttribute="bottom" secondItem="frA-Px-63J" secondAttribute="bottom" id="XVH-VQ-pLE"/>
+                <constraint firstAttribute="trailing" secondItem="frA-Px-63J" secondAttribute="trailing" id="gCq-3H-agy"/>
+                <constraint firstItem="2be-Os-R9Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vNj-at-7HV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-32" y="-81.409295352323838"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="default_text_color">
+            <color red="0.23137254901960785" green="0.18823529411764706" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

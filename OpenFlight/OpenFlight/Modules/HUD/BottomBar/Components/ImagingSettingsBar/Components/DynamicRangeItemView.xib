@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rajdhani-SemiBold.ttf">
+            <string>Rajdhani-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicRangeItemView" customModule="OpenFlight" customModuleProvider="target">
+            <connections>
+                <outlet property="dynamicRangeImageView" destination="v68-HR-uz0" id="Rha-px-3TZ"/>
+                <outlet property="dynamicRangeLabel" destination="WHw-HW-CXc" id="kXn-jk-JPB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83L-yO-G3X">
+                    <rect key="frame" x="4" y="4" width="306" height="26"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDynamicRange" translatesAutoresizingMaskIntoConstraints="NO" id="v68-HR-uz0">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="lKi-tQ-c7Q"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHw-HW-CXc">
+                            <rect key="frame" x="20" y="0.0" width="286" height="26"/>
+                            <fontDescription key="fontDescription" name="Rajdhani-Semibold" family="Rajdhani" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Rajdhani-Semibold" family="Rajdhani" pointSize="22"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="83L-yO-G3X" secondAttribute="bottom" constant="4" id="FZA-PO-QJ0"/>
+                <constraint firstItem="83L-yO-G3X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="hBT-tD-uSt"/>
+                <constraint firstItem="83L-yO-G3X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="hZl-bo-3yS"/>
+                <constraint firstAttribute="trailing" secondItem="83L-yO-G3X" secondAttribute="trailing" constant="4" id="ijM-Ro-7Sd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="308.80000000000001" y="130.43478260869566"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icDynamicRange" width="16" height="16"/>
+    </resources>
+</document>
